@@ -1,0 +1,27 @@
+# Dipendenze e package manager
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build e output
+dist/
+build/
+*.min.css
+*.min.js
+
+# File di sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Configurazioni ambientali
+.env
+.env.local
+.env.*.local
+
+# Cartelle di GitHub e altri tool
+.github/
+.npm/
