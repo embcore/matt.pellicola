@@ -1,38 +1,47 @@
-<!doctype html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>matt.pellicola</title>
-  <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
-  <header>
-    <h1>matt.pellicola</h1>
-    <button id="theme-toggle">🌙</button>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
 
-  <main class="gallery">
-    <div class="photo-container">
-      <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 1">
+<head>
+  <meta charset="UTF-8" />
+  <title>Masonry Example</title>
+</head>
+
+<body>
+  <h1>Masonry - imagesLoaded callback, vanilla JS</h1>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
     </div>
-    <div class="photo-container">
-      <img src="https://cdn.cosmos.so/e7ebdcdd-0a68-4fce-9306-bd5ebda5e341.?format=jpeg" alt="Foto 2">
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
     </div>
-    <div class="photo-container">
-      <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 3">
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
     </div>
-    <div class="photo-container">
-      <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 4">
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
     </div>
-    <div class="photo-container">
-      <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 5">
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
     </div>
-    <div class="photo-container">
-      <img src="https://images.unsplash.com/photo-1739641375724-dfea74e0df69?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 6">
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
     </div>
-  </main>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+    </div>
+  </div>
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

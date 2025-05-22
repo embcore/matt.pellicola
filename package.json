@@ -13,5 +13,9 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "imagesloaded": "^5.0.0",
+    "masonry-layout": "^4.2.2"
   }
 }

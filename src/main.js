@@ -1,22 +1,13 @@
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
+import './style.css';
+import Masonry from 'masonry-layout';
+import imagesLoaded from 'imagesloaded';
 
-// Controlla se l'utente ha già una preferenza salvata
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-mode");
-  themeToggle.textContent = "light";
-}
+const grid = document.querySelector('.grid');
 
-// Cambia tema al click
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-
-  // Salva la preferenza dell'utente
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
-    themeToggle.textContent = "light";
-  } else {
-    localStorage.setItem("theme", "light");
-    themeToggle.textContent = "dark";
-  }
+imagesLoaded(grid, function () {
+  new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 });
