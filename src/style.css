@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  color: #f0f0f0;
+  background: #303030;
 }
 
 html {
@@ -7,20 +9,21 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  background: #ddd;
+  font-family: "Nunito Sans", sans-serif;
   margin: 0;
   padding: 2rem;
 }
 
-/* ---- grid ---- */
-
-.grid {
-  background: #ddd;
-  margin-left: -10px;
+.header {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 1rem;
 }
 
-/* clearfix */
+/* .grid {
+  margin: 0px;
+} */
+
 .grid:after {
   content: '';
   display: block;
@@ -29,18 +32,18 @@ body {
 
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: 50%;
 }
 
 .grid-item {
-  float: left;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  transition: transform 0.4s ease;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .grid-item img {
   display: block;
-  max-width: 100%;
-  border-radius: 4px;
+  width: 100%;
+  height: auto;
 }
